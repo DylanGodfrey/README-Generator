@@ -82,9 +82,8 @@ function init() {
         name: "email" 
       },
     ])
-    .then((response) => {
-      // write file to a different folder
-      writeToFile("./sample_readme/README.md", markdownJS.generate(response));
+      .then(function (userInput) {
+        writeToFile("README.md", generateMarkdown(userInput));
     });
 }
 
