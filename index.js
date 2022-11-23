@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMd = require("./utils/generateMarkdown.js");
 
 const questions = [
   "What is the project title?",
@@ -82,8 +82,8 @@ function init() {
         name: "email" 
       },
     ])
-      .then(function (userInput) {
-        writeToFile("README.md", generateMarkdown(userInput));
+      .then(response => {
+        writeToFile("README.md", generateMd(response));
     });
 }
 

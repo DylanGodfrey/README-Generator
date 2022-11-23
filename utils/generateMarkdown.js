@@ -145,7 +145,7 @@ means.`;
   }
 }
 
-function generate(data) {
+function generateMarkdown(data) {
   return `# ${data.title}\n\n
 ## Description\n${data.description}\n\n
 ## Table of Content\n - [Installation](#installation)\n - [Usage](#usage)\n - [Contributing](#contributing)\n - [Tests](#tests)\n - [License](#license)\n - [Questions](#questions)\n\n
@@ -159,5 +159,5 @@ function generate(data) {
 }
 
 module.exports = {
-  generate,
+  generateMarkdown
 };
