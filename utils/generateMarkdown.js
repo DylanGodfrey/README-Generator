@@ -153,14 +153,8 @@ function generate(data) {
 ## Usage\n${data.usage}\n\n
 ## Contributing\n${data.contribution}\n\n
 ## Tests\n${data.test}\n\n
-## License ${renderLicenseBadge(data.license)}\n${renderLicenseLink(
-    data.license
-  )}\n\n${renderLicenseSection(data.license)}\n\n
-## Questions\n - [Github](https://www.github.com/${
-    data.username
-  })\n - You can ask additional questions via email [${data.email}](${
-    data.email
-  })
+## License ${renderLicenseBadge(data.license)}\n${renderLicenseLink(data.license)}\n\n${renderLicenseSection(data.license)}\n\n
+## Questions\n - [Github](https://www.github.com/${data.username})\n - You can ask additional questions via email [${data.email}](${data.email})
 `;
 }
 
